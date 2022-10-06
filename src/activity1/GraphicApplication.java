@@ -42,11 +42,15 @@ public class GraphicApplication extends JFrame implements ActionListener {
 		setVisible(true);
 	}
 
+	/**
+	 * Accion del boton. Al pulsar aparecera un panel saludando con el nombre
+	 * introducido
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == button) {
 			String name = this.textField.getText();
-			JOptionPane.showMessageDialog(null, "Hola " + name+"!");
+			JOptionPane.showMessageDialog(null, "Hola " + name + "!");
 		}
 
 	}
